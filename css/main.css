@@ -1,0 +1,276 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  }
+
+}
+
+body {
+    height: 100%;
+    font-family: Poppins-Regular, sans-serif;
+}
+
+.div1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.div2 {
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1; 
+}
+
+.div3 {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 55px 55px 37px 55px;
+
+    background: #c96726;
+    background: -webkit-linear-gradient(top, #c5550a65, #63086349);
+    background: -o-linear-gradient(top, #ff75dd, #ef2435);
+    background: -moz-linear-gradient(top, #cf8d29, #ef2483);
+    background: linear-gradient(top, #b42a11, #833b59);
+}
+
+.form {
+    width: auto;
+    padding: 30px;
+}
+
+.form-logo {
+    font-size: 60px; 
+    color: #333333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.logo {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.form-titel {
+  font-family: Poppins-Medium;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+
+.form-input {
+    width: 100%;
+    position: relative;
+
+    margin-bottom: 30px;
+}
+
+.input {
+    font-family: Poppins-Regular;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: none;   
+    padding: 0px 0px 0px 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.checkbox {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+}
+
+.input-checkbox {
+    display: none;
+}
+
+.label-checkbox {
+    font-family: Poppins-Regular;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.2;
+  
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+.label-checkbox::before {
+  content: "\f26b";
+  font-family: Material-Design-Iconic-Font;
+  font-size: 13px;
+  color: transparent;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.input-checkbox:checked + .label-checkbox::before {
+  color: #000000;
+}
+
+.container-login {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-center {
+
+}
+
+@media (max-width: 576px) {
+    .wrap-login100 {
+      padding: 55px 15px 37px 15px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  html, body {margin: 0; height: 100%; overflow: hidden}
+
+  .button {
+    width: 10%
+  }
+  
+  .button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.1s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: relative;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 2px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .pf-img {
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+  
+  }
+
+  .login-form{
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.2;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 120px;
+    height: 50px;
+    border-radius: 25px;
+  
+    background: #5e0ef3;
+    background: -webkit-linear-gradient(bottom, #63086349, #c5550a65);
+    background: -o-linear-gradient(bottom, #7579ff, #b224ef);
+    background: -moz-linear-gradient(bottom, #7579ff, #b224ef);
+    background: linear-gradient(bottom, #7579ff, #b224ef);
+    position: relative;
+    z-index: 1;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+ 

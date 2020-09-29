@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/lowpolycat.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+	<!--===============================================================================================-->
+	<style>
+		#wow {background-image: url(images/gif.gif); background-repeat: no-repeat; background-size: cover;}
+	</style>
+</head>
+<body id="wow">
+	<div class="div1">
+		<div class="div2">
+			<div class="div3">
+							<!--<span class="form-logo">
+								<i class="logo"></i>
+							</span>-->
+
+							<span class="form-logo">
+								<i class="logo"><!--<img class="pf-img" src="images/pf.gif"></img>--></i>
+								
+								
+							</span>
+		
+							<span class="form-titel">
+								Log in
+							</span>
+		
+							<div class="form-input" data-validate = "Enter username">
+								<input class="input" type="text" id="userField" name="username" placeholder="Username">
+								<span class="focus-input100" data-placeholder="&#xf207;"></span>
+							</div>
+		
+							<div class="form-input" data-validate="Enter password">
+								<input class="input" type="password" id="passField" name="pass" placeholder="Password">
+								<span class="focus-input100" data-placeholder="&#xf191;"></span>
+							</div>
+		
+							<div class="container-login">
+								<button onclick="login()">
+									Login
+								</button>
+							</div>
+		
+							
+					</div>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+</body>
+</html>
